@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/personalNewsFragment"
+            android:title="@string/your_news"
+            android:icon="@drawable/ic_personal_state_list"/>
+
+    <item
+            android:id="@+id/localNewsFragment"
+            android:title="@string/headlines"
+            android:icon="@drawable/ic_local_state_list"/>
+
+    <item
+            android:id="@+id/savedNewsFragment"
+            android:title="@string/saved"
+            android:icon="@drawable/ic_saved_state_list"/>
+
+</menu>

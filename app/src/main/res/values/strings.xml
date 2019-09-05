@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Newspaper</string>
+
+    <!-- Onboarding - Titles & Buttons -->
+    <string name="onboarding_setup">Make your newspaper the way you like it</string>
+    <string name="onboarding_dropdown_hint">Country</string>
+    <string name="onboarding_previous">Previous</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Finish</string>
+    <string name="onboarding_select_sources">Select your preferred news sources</string>
+    <string name="onboarding_filter_by">Filter by:</string>
+    <string name="onboarding_filter_category">Category</string>
+    <string name="onboarding_filter_language">Language</string>
+    <string name="onboarding_welcome">Welcome to Newspaper</string>
+
+    <!-- Main - Navigation -->
+    <string name="your_news">Your News</string>
+    <string name="headlines">Headlines</string>
+    <string name="saved">Bookmarks</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- All - Snackbar network connection messages -->
+    <string name="snackbar_no_internet_connection">You\'re not connected to the internet. Try bookmarking articles for later.</string>
+    <string name="snackbar_retry">Retry</string>
+    <string name="snackbar_error_refreshing">An error occurred while trying to refresh. Try again later.</string>
+
+    <!-- Main - Saved Articles -->
+    <string name="no_articles_saved">You haven\'t bookmarked any articles yet.</string>
+
+    <!-- Detail - Menu -->
+    <string name="save_article">Bookmark</string>
+    <string name="share_article">Share</string>
+    <string name="view_in_browser">View in browser</string>
+
+    <string name="intent_share_title">Share this article</string>
+
+    <!-- Detail - Snackbar messages -->
+    <string name="snackbar_saved_article">This news article has been bookmarked.</string>
+    <string name="snackbar_not_saved_article">This news article has been removed.</string>
+    <string name="snackbar_error_saving_article">An error occurred saving this article.</string>
+    <string name="no_browser_available">No browser available.</string>
+
+    <!-- Settings - Titles -->
+    <string name="pref_category_articles_links">Articles and Links</string>
+    <string name="pref_category_general">General</string>
+    <string name="pref_category_about">About</string>
+    <string name="pref_title_sources">Sources</string>
+    <string name="pref_title_country">Country</string>
+    <string name="pref_title_view_article">View articles in-app</string>
+    <string name="pref_title_view_extra">View external links in-app</string>
+    <string name="pref_title_made_by">Made by Talha</string>
+    <string name="pref_title_powered_by">Powered by News API</string>
+
+    <!-- Settings - Summaries -->
+    <string name="pref_summary_change_sources">Change your preferred news sources</string>
+    <string name="pref_summary_view_article_on">Articles will open in the app</string>
+    <string name="pref_summary_view_article_off">Articles will open in your browser</string>
+    <string name="pref_summary_view_extra_on">External links will open in the app</string>
+    <string name="pref_summary_view_extra_off">External links will open in your browser</string>
+    <string name="pref_summary_powered_by_url" translatable="false">newsapi.org</string>
+
+    <!-- Settings - Keys -->
+    <string name="pref_key_sources" translatable="false">sources</string>
+    <string name="pref_key_country" translatable="false">country</string>
+    <string name="pref_key_view_article" translatable="false">view_article</string>
+    <string name="pref_key_view_extra" translatable="false">view_extra</string>
+    <string name="pref_key_onboarding" translatable="false">needs_onboarding</string>
+
+    <!-- Chips - Category filter-->
+    <string name="chip_business">Business</string>
+    <string name="chip_entertainment">Entertainment</string>
+    <string name="chip_general">General</string>
+    <string name="chip_health">Health</string>
+    <string name="chip_science">Science</string>
+    <string name="chip_sports">Sports</string>
+    <string name="chip_technology">Technology</string>
+
+    <!-- Chips - Language filter-->
+    <string name="chip_arabic">Arabic</string>
+    <string name="chip_german">German</string>
+    <string name="chip_english">English</string>
+    <string name="chip_spanish">Spanish</string>
+    <string name="chip_french">French</string>
+    <string name="chip_italian">Italian</string>
+    <string name="chip_dutch">Dutch</string>
+    <string name="chip_norwegian">Norwegian</string>
+    <string name="chip_portuguese">Portuguese</string>
+    <string name="chip_russian">Russian</string>
+    <string name="chip_swedish">Swedish</string>
+    <string name="chip_urdu">Urdu</string>
+    <string name="chip_chinese">Chinese</string>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="news"
+                type="com.abdulkuddus.talha.newspaper.domain.News"/>
+        <variable
+                name="clickListener"
+                type="com.abdulkuddus.talha.newspaper.ui.NewsClick"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:onClick="@{() -> clickListener.onClick(news)}">
+
+
+        <ImageView
+                android:id="@+id/news_item_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#00303030"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:newsImage="@{news}"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+        <TextView
+                android:id="@+id/news_item_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:ellipsize="end"
+                android:textSize="20sp"
+                android:maxLines="3"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/news_item_image"
+                app:layout_constraintTop_toTopOf="@+id/news_item_image"
+                app:layout_constraintBottom_toTopOf="@+id/news_item_publisher"
+                app:autoSizeMaxTextSize="24sp"
+                app:autoSizeMinTextSize="18sp"
+                app:autoSizeTextType="uniform"
+                app:newsTitle="@{news}"
+                tools:text="Sample News Headline which is more than 3 words"/>
+
+        <TextView
+                android:id="@+id/news_item_publisher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                app:layout_constraintStart_toStartOf="@+id/news_item_title"
+                app:layout_constraintEnd_toStartOf="@+id/news_item_date"
+                app:newsPublisher="@{news}"
+                tools:text="Publisher Name"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="14sp"
+                app:autoSizeMinTextSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/news_item_image"/>
+
+        <TextView
+                android:id="@+id/news_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:newsDate="@{news}"
+                tools:text="10 July 2019"
+                app:layout_constraintEnd_toEndOf="@+id/news_item_title"
+                app:layout_constraintBottom_toBottomOf="@+id/news_item_publisher"/>
+
+        <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- I should really be creating these labels dynamically in code but I can't figure that out
+         and this seems easier. ¯\_(ツ)_/¯ -->
+    <string-array name="pref_country_labels">
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Belgium</item>
+        <item>Brazil</item>
+        <item>Bulgaria</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Cuba</item>
+        <item>Czech Republic</item>
+        <item>Egypt</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Ireland</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Latvia</item>
+        <item>Lithuania</item>
+        <item>Malaysia</item>
+        <item>Mexico</item>
+        <item>Morocco</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Nigeria</item>
+        <item>Norway</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Saudi Arabia</item>
+        <item>Serbia</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Taiwan</item>
+        <item>Thailand</item>
+        <item>Turkey</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Venezuela</item>
+    </string-array>
+
+    <string-array name="pref_country_values">
+        <item>ar</item>
+        <item>au</item>
+        <item>at</item>
+        <item>be</item>
+        <item>br</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>cn</item>
+        <item>co</item>
+        <item>cu</item>
+        <item>cz</item>
+        <item>eg</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>gr</item>
+        <item>hk</item>
+        <item>hu</item>
+        <item>in</item>
+        <item>id</item>
+        <item>ie</item>
+        <item>it</item>
+        <item>jp</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>my</item>
+        <item>mx</item>
+        <item>ma</item>
+        <item>nl</item>
+        <item>nz</item>
+        <item>ng</item>
+        <item>no</item>
+        <item>ph</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sa</item>
+        <item>rs</item>
+        <item>sg</item>
+        <item>sk</item>
+        <item>si</item>
+        <item>za</item>
+        <item>kr</item>
+        <item>se</item>
+        <item>ch</item>
+        <item>tw</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>ua</item>
+        <item>ae</item>
+        <item>gb</item>
+        <item>us</item>
+        <item>ve</item>
+    </string-array>
+
+    <string-array name="filter_category_options">
+        <item>business</item>
+        <item>entertainment</item>
+        <item>general</item>
+        <item>health</item>
+        <item>science</item>
+        <item>sports</item>
+        <item>technology</item>
+    </string-array>
+
+    <string-array name="filter_language_options">
+        <item>ar</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>se</item>
+        <item>ud</item>
+        <item>zh</item>
+    </string-array>
+</resources>

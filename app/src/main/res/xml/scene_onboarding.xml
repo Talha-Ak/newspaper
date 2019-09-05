@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            motion:constraintSetEnd="@id/end"
+            motion:constraintSetStart="@id/start">
+        <KeyFrameSet>
+            <KeyAttribute
+                    android:alpha="0"
+                    motion:framePosition="0"
+                    motion:motionTarget="@id/onboarding_previous_button" />
+
+            <KeyAttribute
+                    android:alpha="1"
+                    motion:framePosition="50"
+                    motion:motionTarget="@id/onboarding_previous_button" />
+
+            <KeyAttribute
+                    android:translationY="0dp"
+                    motion:framePosition="50"
+                    motion:motionTarget="@id/onboarding_continue_button" />
+
+            <KeyAttribute
+                    android:translationY="50dp"
+                    motion:framePosition="75"
+                    motion:motionTarget="@id/onboarding_continue_button" />
+
+            <KeyAttribute
+                    android:translationX="60dp"
+                    motion:framePosition="65"
+                    motion:motionTarget="@id/onboarding_complete_button" />
+
+            <KeyAttribute
+                    android:translationX="0dp"
+                    motion:framePosition="100"
+                    motion:motionTarget="@id/onboarding_complete_button" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:id="@+id/onboarding_previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="16dp"
+                android:alpha="0"
+                motion:layout_constraintTop_toBottomOf="@+id/view_pager"
+                motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+                android:id="@+id/onboarding_continue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="?attr/colorAccent"
+                android:translationY="0dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+                android:id="@+id/onboarding_complete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:translationX="60dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintStart_toEndOf="parent" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+                android:id="@+id/onboarding_previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="16dp"
+                android:alpha="1"
+                motion:layout_constraintTop_toBottomOf="@+id/view_pager"
+                motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+                android:id="@+id/onboarding_continue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:translationY="50dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+                android:id="@+id/onboarding_complete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:translationX="0dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent" />
+
+    </ConstraintSet>
+
+</MotionScene>

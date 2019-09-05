@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+                                      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.preference.PreferenceCategory app:title="@string/pref_category_general">
+
+    <androidx.preference.Preference
+            app:key="@string/pref_key_sources"
+            app:title="@string/pref_title_sources"
+            app:summary="@string/pref_summary_change_sources"/>
+
+    <androidx.preference.ListPreference
+            app:key="@string/pref_key_country"
+            app:title="@string/pref_title_country"
+            app:summary="Select country to choose news from"
+            app:entries="@array/pref_country_labels"
+            app:entryValues="@array/pref_country_values"
+            app:defaultValue="gb"
+            app:useSimpleSummaryProvider="true"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory app:title="@string/pref_category_articles_links">
+
+        <androidx.preference.SwitchPreferenceCompat
+                app:key="@string/pref_key_view_article"
+                app:title="@string/pref_title_view_article"
+                app:summaryOff="@string/pref_summary_view_article_off"
+                app:summaryOn="@string/pref_summary_view_article_on"
+                app:defaultValue="true"/>
+
+        <androidx.preference.SwitchPreferenceCompat
+                app:key="@string/pref_key_view_extra"
+                app:title="@string/pref_title_view_extra"
+                app:dependency="@string/pref_key_view_article"
+                app:summaryOff="@string/pref_summary_view_extra_off"
+                app:summaryOn="@string/pref_summary_view_extra_on"
+                app:defaultValue="true"/>
+
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory app:title="@string/pref_category_about">
+
+        <androidx.preference.Preference
+                app:title="@string/pref_title_powered_by"
+                app:summary="@string/pref_summary_powered_by_url">
+
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://newsapi.org/"/>
+
+        </androidx.preference.Preference>
+
+        <androidx.preference.Preference
+                app:title="@string/pref_title_made_by"
+                app:summary="Version 1.0.0"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

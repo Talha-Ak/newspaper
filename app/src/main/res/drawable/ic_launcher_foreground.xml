@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+  <path
+      android:pathData="M80,70a2,2 0,0 1,-0.63 1.56,2.2 2.2,0 0,1 -1.62,0.57l-3.39,0.11 -6.79,0.14c-4.52,0.09 -9,0.08 -13.57,0.12s-9,0 -13.57,-0.12l-6.79,-0.13 -3.39,-0.12a2.2,2.2 0,0 1,-1.62 -0.57A2,2 0,0 1,28 70a2,2 0,0 0,2.25 1.87l3.39,-0.12 6.79,-0.13c4.52,-0.08 9,-0.08 13.57,-0.12s9,0 13.57,0.12l6.79,0.14 3.39,0.11A2,2 0,0 0,80 70Z"
+      android:strokeAlpha="0.2"
+      android:fillColor="#9e9e9e"
+      android:fillAlpha="0.2"/>
+  <path
+      android:pathData="M78,36H47L28,52V70a2,2 0,0 0,2 2H78a2,2 0,0 0,2 -2V38A2,2 0,0 0,78 36ZM76,50.7A1.31,1.31 0,0 1,74.7 52H52.3A1.31,1.31 0,0 1,51 50.7V39.3A1.3,1.3 0,0 1,52.3 38H74.7A1.3,1.3 0,0 1,76 39.3Z"
+      android:fillColor="#f5f5f5"/>
+  <path
+      android:pathData="M28,52 L47,36V51a1,1 0,0 1,-1 1Z"
+      android:fillColor="#bdbdbd"/>
+  <path
+      android:pathData="M0,0h108v108h-108z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="0"
+          android:endY="108"
+          android:startX="0"
+          android:endX="108"
+          android:type="linear">
+        <item android:offset="0" android:color="#19FFFFFF"/>
+        <item android:offset="0.17" android:color="#11FEFEFE"/>
+        <item android:offset="0.61" android:color="#05FDFDFD"/>
+        <item android:offset="1" android:color="#00FCFCFC"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M32,66h44v2h-44z"
+      android:fillColor="#616161"/>
+  <path
+      android:pathData="M32,62h44v2h-44z"
+      android:fillColor="#616161"/>
+  <path
+      android:pathData="M32,56h19v4h-19z"
+      android:fillColor="#616161"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M108,108V65.17s-29.17,-29 -28.09,-28.08C80,37.87 80,62.7 80,70a2,2 0,0 1,-2 2H29.75c0.25,0 -0.87,-0.31 -0.87,-0.31L65.2,108Z"
+      android:strokeAlpha="0.2"
+      android:fillAlpha="0.2"/>
+</vector>
